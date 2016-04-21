@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    font-family: monospace;
+}
+
+a, a:visited, a:hover {
+    color:darkorchid;
+    text-decoration: none;
+}
+
+h1 {
+    color: aqua;
+    letter-spacing: 1px;
+}
+
+.container {
+    margin: 30px;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container input[type="checkbox"]{
+    visibility: hidden;
+}
+
+.container label{
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+    transition: background 0.2s ease-in-out;
+}
+
+.container label:after{
+    content: "\2639";
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container input[type="checkbox"]:checked + label:after{
+    left: 45px;
+    content:"\1F60A";
+}
+
+.container input[type="checkbox"]:checked + label{
+    background-color: darkorange;
+}
