@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    font-family: monospace;
+}
+
+a, a:visited, a:hover {
+    color:darkorchid;
+    text-decoration: none;
+}
+
+h1 {
+    color: aqua;
+    letter-spacing: 1px;
+}
+
+.container {
+    margin: 30px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container:hover .shine {
+    transform: skewX(20deg) translateX(300px);
+}
+.container:hover .text {
+    background-color: beige;
+    color:darkmagenta;
+}
+
+.text {
+    border: 0;
+    width: 200px;
+    padding: 30px 15px;
+    background-color: sandybrown;
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+}
+
+.shine {
+    position: absolute;
+    top: 0;
+    left: -70px;
+    height: 100px;
+    width: 50px;
+    background: white;
+    transition: all 0.2s linear;
+    transform: skewX(20deg) translateX(0);
+}
