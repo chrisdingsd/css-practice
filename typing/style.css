@@ -1,0 +1,30 @@
+body { font-family: Consolas, monospace; }
+
+@keyframes typing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes blinking {
+    0%, 100% {border-color: transparent;}
+    50% {border-color: black;}
+}
+
+p {
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    animation: typing 18s steps(38, end), blinking infinite 1s steps(1, end);
+    position:absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white; /* same as background */
+    border-left: .1em solid black;
+}

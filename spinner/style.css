@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    font-family: monospace;
+}
+
+a, a:visited, a:hover {
+    color:darkorchid
+    text-decoration: none;
+}
+
+h1 {
+    color: aqua;
+    letter-spacing: 1px;
+}
+
+.simplespinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 5px solid rgba(255,0,0,1);
+    border-bottom: 5px solid rgba(255,0,0,0.2);
+    border-left: 5px solid rgba(255,0,0,0.2);
+    border-right:5px solid rgba(255,0,0,0.2);
+    animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background: rgba(0,0,0,0.1);
+}
+
+.pie {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+    transform-origin: 100% 50%;
+  background: #08C;
+  border: 10px solid rgba(0,0,0,0.4);
+}
+
+.spinner {
+  border-radius: 125px 0 0 125px;
+  z-index: 200;
+  border-right: none;
+  animation: rota 10s linear infinite;
+}
+
+.filler {
+  border-radius: 0 125px 125px 0;
+  z-index: 100;
+  border-left: none;
+  animation: fill 10s steps(1, end) infinite;
+  left: 50%;
+  opacity: 0;
+}
+
+.mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  opacity: 1;
+  background: inherit;
+  animation: mask 10s steps(1, end) infinite;
+}
+
+@keyframes rota {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fill {
+  0%        { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+@keyframes mask {
+  0%        { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
