@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yao's CSS practice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" id="bulma" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
+  <style>
+    body {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    .has-text-muted {
+      color: #95A5A6;
+    }
+    .fa {
+      font-size:10px;
+      padding-top:3px;
+      color: #95A5A6;
+    }
+    .panel-block-item  {
+      display: inline-block;
+      color: #95A5A6;
+      font-weight: bold;
+      padding-right: 10px;
+    }
+
+    .panel-block-item .tag,.panel-block-item .button  {
+      color: #95A5A6;
+      font-weight: bold;
+    }
+
+    .panel-block-item.is-right {
+      display: inline-block;
+      color: #95A5A6;
+      font-weight: bold;
+      float: right;
+    }
+
+    .panel-block-item .likes {
+      padding-right: 25px;
+    }
+
+    .panel-block-item .likes .fa,
+    .panel-block-item .comments .fa
+    {
+      font-size: 15px;
+      margin-top: -2px;
+    }
+
+    .avatar {
+      border-radius: 42px;
+      margin-right: 10px;
+      height: 42px;
+      width: 42px;
+      padding: 2px;
+      border: 1px solid #dbdbdb;
+    }
+
+    .timestamp {
+      color: #95A5A6;
+      font-weight: bold;
+    }
+
+    .project-item {
+      height: 200px;
+    }
+
+    .project-item a {
+      display: block;
+      height: 100%;
+      line-height: 5;
+      text-align: center;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <nav class="nav section" id="top">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item" href="https://yaoding.github.io">
+            Yao
+          </a>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+  
+        </div>
+      </div>
+    </nav>
+
+    <div class="columns section">
+
+      <div class="column is-8">
+        <div class="title">CSS Practice</div>
+      </div>
+
+      <div class="column is-4 has-text-right">
+        <a class="button is-active"><i class="fa fa-th title is-5"></i></a>
+        <a class="button"><i class="fa fa-align-justify title is-5"></i></a>
+      </div>
+
+    </div>
+
+    <div class="columns">
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/typing" class="notification is-info">Typing Effect</a>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/spinner" class="notification is-primary">Spinner</a>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/simple-toggle"  class="notification is-success">Simple Toggle</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/rotate-face-front" class="notification is-warning">Rotate Face Front</a>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/rotate"  class="notification is-danger">Rotate</a>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/displayer" class="notification is-info">Displayer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/button-shine"  class="notification is-primary">Button Shine</a>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="card project-item">
+          <a href="/collapse-button">Collapse Button</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Collapse Button</h1>
+        <h2> </h2>
+        <h3> Based on  Web Bos's blog</h3>
+
+        <div class="container">
+            <span class="flash" id="flash">
+                <i>1</i>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </span>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                var items = document.querySelectorAll('#flash span');
+                var index = 0
+                setInterval(function(){
+                    index = index % 5;
+                    items[index].style.zIndex =  +items[index].style.zIndex + 1;
+                    index++;
+                }, 1000)
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash {
+  display: block;
+  background: #ecd018;
+  padding: 1px 1px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s
+}
+
+/*placeholder for space*/
+.flash i {
+  opacity: 0;
+}
+
+.flash:hover {
+  background: transparent;
+}
+
+.flash span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #ecd018;
+    transition: all 0.2s;
+    transform: translateZ(0);
+    line-height: 50px;
+}
+
+.flash:hover span:nth-of-type(odd) {
+  transform: perspective(100px) rotateX(20deg)
+}
+
+.flash:hover span:nth-of-type(even) {
+  transform: perspective(100px) rotateX(-20deg)
+}
+
+.flash:hover span:nth-of-type(2) {
+  top: 54px;
+}
+
+.flash:hover span:nth-of-type(3) {
+  top: 100px;
+}
+
+.flash:hover span:nth-of-type(4) {
+  top: 154px;
+}
+
+.flash:hover span:nth-of-type(5) {
+  top: 200px;
+}
